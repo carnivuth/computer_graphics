@@ -2,7 +2,7 @@
 
 ![](Pasted%20image%2020240305180647.png)
 
-Obbiettivo, ottenere dal modello 3D una rappresentazione da disegnare sul frame buffer grafico
+Obbiettivo: ottenere dal modello 3D una rappresentazione da disegnare sul frame buffer grafico
 
 ```mermaid
 flowchart TD
