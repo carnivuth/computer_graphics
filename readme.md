@@ -1,9 +1,3 @@
----
-id: readme
-aliases: []
-tags: []
----
-
 # COMPUTER GRAPHICS
 
 this are my personal notes on computer graphics course of professor Casciola Giulio
