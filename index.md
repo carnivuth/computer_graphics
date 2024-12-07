@@ -2,8 +2,8 @@
 
 ## LA MATEMATICA DIETRO AL RENDERING GRAFICO
 
-- [trasformazioni_geometriche](pages/TRASFORMAZIONI_GEOMETRICHE.md)
+- [trasformazioni geometriche](pages/TRASFORMAZIONI_GEOMETRICHE.md)
 
 ## TECNOLOGIE PER IL RENDERING
 
-- [xwindow_system](pages/XWINDOW_SYSTEM.md)
+- [xwindow system](pages/XWINDOW_SYSTEM.md)
