@@ -1,3 +1,7 @@
+---
+index: 2
+---
+
 # TRASFORMAZIONI DI VISTA
 
 Per poter renderizzare un oggetto 3D in uno schermo esprimerlo per mezzo delle sue coordinate non e sufficiente, e necessario poter trasformare le coordinate dell'oggetto in coordinate del piano immagine
@@ -120,3 +124,4 @@ C[passaggio al sdr della window]
 D[trasformazione window viewport]
 A --> B --> C --> D
 ```
+[PREVIOUS](pages/TRASFORMAZIONI_GEOMETRICHE.md) [NEXT](pages/REAL_TIME_RENDERING.md)

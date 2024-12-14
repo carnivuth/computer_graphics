@@ -2,6 +2,7 @@
 id: REAL_TIME_RENDERING
 aliases: []
 tags: []
+index: 3
 ---
 
 # ALGORITMI DI REAL TIME RENDERING
@@ -100,3 +101,5 @@ void zbuffer() {
 | ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------|
 | Non prevede alcun ordinamento, infatti il colore di un pixel e' determinato dal punto 3D (di Ze minore) di cui lui e' immagine | Richiede spazio di memoria aggiuntivo        |
 | Semplice da implementare                                                                                                       | ancora una sorta di ridisegno anche se solo in memoria (copia del frame buffer) |
+
+[PREVIOUS](pages/TRASFORMAZIONI_VISTA.md) [NEXT](pages/ALGORITMI_RASTERIZZAZIONE.md)

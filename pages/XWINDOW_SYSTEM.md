@@ -1,5 +1,4 @@
 ---
-index: 2
 ---
 # XWINDOW SYSTEM
 
@@ -29,4 +28,5 @@ Il protocollo x prevede 3 tipi di messaggi:
 - **richieste** (*client -> server*) effettuate per accedere alle risorse, asincrone (*dispatch*)
 - **risposte** (*server -> client*) ottenute dal server in seguito a una richiesta
 - **eventi** (*server -> client*) il server notifica i client in maniera asincrona e proattiva
-[PREVIOUS](pages/TRASFORMAZIONI_GEOMETRICHE.md)
+
+ [NEXT](pages/TRASFORMAZIONI_GEOMETRICHE.md)
