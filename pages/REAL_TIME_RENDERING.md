@@ -1,10 +1,16 @@
+---
+id: REAL_TIME_RENDERING
+aliases: []
+tags: []
+---
+
 # ALGORITMI DI REAL TIME RENDERING
 
 Uno dei problemi più interessanti in computer graphics e quello del rendering real time, con il quale si intende il **processo di resa di un immagine a partire da una descrizione geometrica della scena tridimensionale in questione**.
 
 ## RIMUOVERE LE LINEE NASCOSTE
 
-Uno dei sotto problemi e quello della determinazione della visibilità o no di una determinata linea e/o faccia. Per questo sono stati presentati diversi che **sfruttano tutti il principio di ordinamento** 
+Uno dei sotto problemi e quello della determinazione della visibilità o no di una determinata linea e/o faccia. Per questo sono stati presentati diversi che **sfruttano tutti il principio di ordinamento**
 
 Gli algoritmi in questione sono stati classificati in base allo spazio operativo
 
@@ -40,7 +46,7 @@ si ordinano i triangoli dal più lontano al più vicino secondo la distanza $Z$ 
 Si basa sul concetto di zona di visibilità, dopo aver riordinato i poligoni questi vengono disegnati e si tiene traccia della zona già ricoperta da altri poligoni
 
 ![](Pasted%20image%2020241210172244.png)
- 
+
 
 | VANTAGGI                                                    | SVANTAGGI                                                      |
 | ----------------------------------------------------------- | -------------------------------------------------------------- |
@@ -90,7 +96,7 @@ void zbuffer() {
 }
 ```
 
-| VANTAGGI                                                                                                                       | SVANTAGGI                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
-| Non prevede alcun ordinamento, infatti il colore di un pixel e' determinato dal punto 3D (di Ze minore) di cui lui e' immagine | Richiede spazio di memoria aggiuntivo                                           |
+| VANTAGGI                                                                                                                       | SVANTAGGI                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------|
+| Non prevede alcun ordinamento, infatti il colore di un pixel e' determinato dal punto 3D (di Ze minore) di cui lui e' immagine | Richiede spazio di memoria aggiuntivo        |
 | Semplice da implementare                                                                                                       | ancora una sorta di ridisegno anche se solo in memoria (copia del frame buffer) |
