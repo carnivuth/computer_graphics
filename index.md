@@ -7,7 +7,8 @@
 - [algoritmi di real time rendering](pages/REAL_TIME_RENDERING.md)
 - [colorare i poligoni: algoritmi di rasterizzazione](pages/ALGORITMI_RASTERIZZAZIONE.md)
 - [recuperare l'informazione della profondità: proiezione prospettica](PROIEZIONE_PROSPETTICA.md)]
+- [ottimizzare la pipeline grafica: clipping](CLIPPING.md)
 
 ## TECNOLOGIE PER IL RENDERING
 
-- [xwindow system](pages/XWINDOW_SYSTEM.md)
+- [il protocollo grafico unix: xwindow](pages/XWINDOW_SYSTEM.md)
