@@ -8,6 +8,7 @@
 - [colorare i poligoni: algoritmi di rasterizzazione](pages/ALGORITMI_RASTERIZZAZIONE.md)
 - [recuperare l'informazione della profondità: proiezione prospettica](PROIEZIONE_PROSPETTICA.md)]
 - [ottimizzare la pipeline grafica: clipping](CLIPPING.md)
+- [considerare gli effetti della luce](ILLUMINAZIONE.md)
 
 ## TECNOLOGIE PER IL RENDERING
 
