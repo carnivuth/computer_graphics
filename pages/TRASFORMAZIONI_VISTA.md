@@ -124,4 +124,5 @@ C[passaggio al sdr della window]
 D[trasformazione window viewport]
 A --> B --> C --> D
 ```
+
 [PREVIOUS](pages/TRASFORMAZIONI_GEOMETRICHE.md) [NEXT](pages/REAL_TIME_RENDERING.md)

@@ -2,6 +2,7 @@
 id: ILLUMINAZIONE
 tags: []
 aliases: 
+index: 7
 ---
 
 # ILLUMINAZIONE
@@ -90,6 +91,8 @@ B -- per ogni poligiono--> A
 
 >[!NOTE] in questo caso la normale e definita a livello di vertice come somma delle normali delle superfici adiacenti
 
+qui un esempio di  [implementazione in webGL](WEBGL.md#IMPLEMENTAZIONE%20DELL'%20[ILLUMINAZIONE](ILLUMINAZIONE.md))
+
 ### PHONG SHADING
 
 Variante del [gouraud shading](#GOURAUD%20SHADING) che effettua l'interpolazione delle normali dei vertici prima di applicare il modello di illuminazione
@@ -102,3 +105,4 @@ C[si rinormalizza]
 D[si applica il modello di illuminazione alla nuova normale]
 A --> B --> C --> D 
 ```
+[PREVIOUS](pages/CLIPPING.md) [NEXT](pages/TEXTURE_MAPPING.md)

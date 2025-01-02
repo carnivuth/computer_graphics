@@ -125,4 +125,5 @@ Metodologia che prende in considerazione i $16$ pixel piu vicini al punto in que
 ![](Pasted%20image%2020241214160835.png)
 
 >[!NOTE] e il compromesso più ragionevole tra calcolo e qualità nonché quello più utilizzato in molti software di grafica
-[PREVIOUS](pages/REAL_TIME_RENDERING.md)
+
+[PREVIOUS](pages/REAL_TIME_RENDERING.md) [NEXT](pages/PROIEZIONE_PROSPETTICA.md)
