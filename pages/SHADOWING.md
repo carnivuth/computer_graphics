@@ -77,4 +77,4 @@ Nella realta le luci non sono mai puntiformi, questo porta a ombre morbide come 
 
 ![](Pasted%20image%2020250102180827.png)
 
-[PREVIOUS](pages/TEXTURE_MAPPING.md)
+[PREVIOUS](pages/TEXTURE_MAPPING.md) [NEXT](pages/MESH_3D_POLIGONALI.md)
