@@ -1,5 +1,10 @@
 ---
+id: XWINDOW_SYSTEM
+tags: []
+aliases: 
+index: 12
 ---
+
 # XWINDOW SYSTEM
 
 Le applicazioni grafiche interagiscono con il display per mezzo di uno stack software che risolve la complessità di amministrare i frame buffer per il display
