@@ -216,4 +216,4 @@ void main( ) {.
 }
 ```
 
- [NEXT](pages/TRASFORMAZIONI_GEOMETRICHE.md)
+[PREVIOUS](pages/XWINDOW_SYSTEM.md)

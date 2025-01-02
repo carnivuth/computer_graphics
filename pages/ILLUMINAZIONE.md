@@ -105,4 +105,5 @@ C[si rinormalizza]
 D[si applica il modello di illuminazione alla nuova normale]
 A --> B --> C --> D 
 ```
+
 [PREVIOUS](pages/CLIPPING.md) [NEXT](pages/TEXTURE_MAPPING.md)

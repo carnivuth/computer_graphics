@@ -83,4 +83,4 @@ Il [solid texturing](#SOLID%20TEXTURING) trova il suo miglior impiego nella gene
 
 ![](Pasted%20image%2020250102155433.png)
 
-[PREVIOUS](pages/ILLUMINAZIONE.md)
+[PREVIOUS](pages/ILLUMINAZIONE.md) [NEXT](pages/SHADOWING.md)

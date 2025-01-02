@@ -93,4 +93,5 @@ L'algoritmo puo essere generalizzato al 3D, dato il parallelepipedo di vista (*f
 Successivamente si effettua la [proiezione prospettica](PROIEZIONE_PROSPETTICA.md) e si procede al clipping rispetto alle altre facce
 
 ![](Pasted%20image%2020241217164353.png)
+
 [PREVIOUS](pages/PROIEZIONE_PROSPETTICA.md) [NEXT](pages/ILLUMINAZIONE.md)

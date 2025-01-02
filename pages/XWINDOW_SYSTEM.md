@@ -34,4 +34,4 @@ Il protocollo x prevede 3 tipi di messaggi:
 - **risposte** (*server -> client*) ottenute dal server in seguito a una richiesta
 - **eventi** (*server -> client*) il server notifica i client in maniera asincrona e proattiva
 
- [NEXT](pages/TRASFORMAZIONI_GEOMETRICHE.md)
+ [NEXT](pages/WEBGL.md)
