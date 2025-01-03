@@ -2,7 +2,7 @@
 id: XWINDOW_SYSTEM
 tags: []
 aliases: 
-index: 12
+index: 11
 ---
 
 # XWINDOW SYSTEM
@@ -34,4 +34,4 @@ Il protocollo x prevede 3 tipi di messaggi:
 - **risposte** (*server -> client*) ottenute dal server in seguito a una richiesta
 - **eventi** (*server -> client*) il server notifica i client in maniera asincrona e proattiva
 
- [NEXT](pages/WEBGL.md)
+[PREVIOUS](pages/MESH_3D_POLIGONALI.md) [NEXT](pages/WEBGL.md)

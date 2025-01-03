@@ -9,8 +9,11 @@
 - [recuperare l'informazione della profondità: proiezione prospettica](pages/PROIEZIONE_PROSPETTICA.md)]
 - [ottimizzare la pipeline grafica: clipping](pages/CLIPPING.md)
 - [considerare gli effetti della luce](pages/ILLUMINAZIONE.md)
+- [gestire le ombre: shadowing](SHADOWING.md)
+- [modellare oggetti 3-dimensionali: Mesh 3D](MESH_3D_POLIGONALI.md)
 
 ## TECNOLOGIE PER IL RENDERING
 
 - [il protocollo grafico unix: xwindow](pages/XWINDOW_SYSTEM.md)
 - [implementazione con tecnologie web: WebGL](pages/WEBGL.md)
+- [tecniche di rendering avanzate con WebGL](RENDERING_AVANZATO_WEBGL.md)

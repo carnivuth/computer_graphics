@@ -2,7 +2,7 @@
 id: WEBGL
 tags: []
 aliases: 
-index: 13
+index: 12
 ---
 
 # WebGL
@@ -216,4 +216,4 @@ void main( ) {.
 }
 ```
 
-[PREVIOUS](pages/XWINDOW_SYSTEM.md)
+[PREVIOUS](pages/XWINDOW_SYSTEM.md) [NEXT](pages/RENDERING_AVANZATO_WEBGL.md)
