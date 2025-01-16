@@ -86,7 +86,7 @@ A[si applica il modello di illuminazione ai 3 vertici]
 B[si interpolano le componenti dei vertici]
 B -- per ogni pixel del poligono -->B
 A --> B
-B -- per ogni poligiono--> A
+B -- per ogni poligiono --> A
 ```
 
 >[!NOTE] in questo caso la normale e definita a livello di vertice come somma delle normali delle superfici adiacenti

@@ -97,6 +97,8 @@ H --> I & J
 
 ### PROIEZIONE A 3 PUNTI DI FUGA
 
+La proiezione a 3 punti di fuga si ha quando l'osservatore non e allineato con nessun asse del sistema di riferimento del mondo (*caso più generale*)
+
 ![](Pasted%20image%2020241210153005.png)
 
 In questo tipo di proiezione si ha che:
