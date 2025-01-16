@@ -1,0 +1,56 @@
+<!-- Licensed under a BSD license. See license.html for license -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WebGL - Textures - Cubemap</title>
+<!--<link type="text/css" href="resources/webgl-tutorials.css" rel="stylesheet" />-->
+</head>
+<body>
+<div class="description">
+Textured Cube using a cubemap. <br/>
+</div>
+<canvas id="canvas" width="400" height="400"></canvas>
+</body>
+<!-- vertex shader -->
+<script id="3d-vertex-shader" type="x-shader/x-vertex">
+attribute vec4 a_position;
+
+uniform mat4 u_matrix;
+
+varying vec3 v_normal;
+
+void main() {
+  // Multiply the position by the matrix.
+  gl_Position = u_matrix * a_position;
+
+  // Pass a normal. Since the positions
+  // centered around the origin we can just 
+  // pass the position
+  v_normal = normalize(a_position.xyz);
+}
+</script>
+<!-- fragment shader -->
+<script id="3d-fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+
+// Passed in from the vertex shader.
+varying vec3 v_normal;
+
+// The texture.
+uniform samplerCube u_texture;
+
+void main() {
+   gl_FragColor = textureCube(u_texture, normalize(v_normal));
+}
+</script>
+
+<script src="resources/webgl-utils.js"></script>
+<script src="resources/m4.js"></script>
+<script src="cube_texture_cubemap.js"></script>
+
+</html>
+
+
+

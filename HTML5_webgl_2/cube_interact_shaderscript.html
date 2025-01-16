@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+      <!--per ricaricare sempre la pagina da zero e non usare la cache-->
+      <META HTTP-EQUIV=”Pragma” CONTENT=”no-cache”>
+      <META HTTP-EQUIV=”Cache-Control” CONTENT=”no-cache”>
+      <style>
+        body {
+            background: #dddddd;
+        }
+        #my_Canvas {
+            margin: 100px;
+            padding: 2px;
+            background: #ffffff;
+            border: thin inset #aaaaaa;
+        }
+    </style>
+   </head>
+<body>
+
+<canvas width="512" height="512" id="my_Canvas"></canvas>
+
+<script id="vertex-shader" type="not-javascript">
+attribute vec3 position;
+uniform mat4 Pmatrix; 
+uniform mat4 Vmatrix;
+uniform mat4 Mmatrix;
+attribute vec3 color;//the color of the point 
+varying vec3 vColor;
+
+void main(void){ //pre-built function
+  gl_Position = Pmatrix*Vmatrix*Mmatrix*vec4(position, 1.);
+  vColor=color;
+}
+</script>
+
+<script id="fragment-shader" type="not-javascript">
+precision mediump float; 
+varying vec3 vColor;
+
+void main(void) {
+  gl_FragColor = vec4(vColor, 1.);
+}
+</script>
+
+<script type="text/javascript" src="resources/webgl-utils.js"></script>
+<script type="text/javascript" src="resources/m4.js"></script>
+<script type="text/javascript" src="cube_interact_shaderscript.js"></script>
+</body>
+</html>  

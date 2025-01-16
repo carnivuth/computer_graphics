@@ -1,0 +1,69 @@
+<!-- Licensed under a BSD license. See license.html for license -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WebGL - Textures - Environment Map</title>
+<!--<link type="text/css" href="resources/webgl-tutorials.css" rel="stylesheet" />-->
+</head>
+<body>
+<div class="description">
+Textured Cube using an environment emap. <br/>
+</div>
+<canvas id="canvas" width="500" height="500"></canvas>
+</body>
+<!-- vertex shader -->
+<script id="3d-vertex-shader" type="x-shader/x-vertex">
+attribute vec4 a_position;
+attribute vec3 a_normal;
+
+uniform mat4 u_projection;
+uniform mat4 u_view;
+uniform mat4 u_world;
+
+varying vec3 v_worldPosition;
+varying vec3 v_worldNormal;
+
+void main() {
+  // Multiply the position by the matrix.
+  gl_Position = u_projection * u_view * u_world * a_position;
+
+  // send the view position to the fragment shader
+  v_worldPosition = (u_world * a_position).xyz;
+
+  // orient the normals and pass to the fragment shader
+  v_worldNormal = mat3(u_world) * a_normal;
+}
+</script>
+<!-- fragment shader -->
+<script id="3d-fragment-shader" type="x-shader/x-fragment">
+precision highp float;
+
+// Passed in from the vertex shader.
+varying vec3 v_worldPosition;
+varying vec3 v_worldNormal;
+
+// The texture.
+uniform samplerCube u_texture;
+
+// The position of the camera
+uniform vec3 u_worldCameraPosition;
+
+void main() {
+  vec3 worldNormal = normalize(v_worldNormal);
+  vec3 eyeToSurfaceDir = normalize(v_worldPosition - u_worldCameraPosition);
+  vec3 direction = reflect(eyeToSurfaceDir,worldNormal);
+
+  gl_FragColor = textureCube(u_texture, direction);
+}
+</script>
+
+<script src="resources/webgl-utils.js"></script>
+<script src="resources/m4.js"></script>
+<script src="cube_texture_environment_map.js"></script>
+
+</html>
+
+
+
