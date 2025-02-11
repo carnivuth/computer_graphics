@@ -5,13 +5,13 @@ aliases:
 index: 6
 ---
 
-# CLIPPING DI LINEE
+# Clipping di linee
 
-Il clipping e la pratica di rimuovere dalla pipeline di rendering gli oggetti che non fanno parte della viewing window in modo da ridurre il processo ai soli elementi necessari e migliorare le performance della computazione
+Il clipping e la pratica di **rimuovere** dalla pipeline di rendering **gli oggetti che non fanno parte della viewing window** in modo da ridurre il processo ai soli elementi necessari e migliorare le performance della computazione
 
 ![](Pasted%20image%2020241217130907.png)
 
-### ALGORITMO DI COHEN-SUTHERLAND
+## Algoritmo di Cohen-Sutherland
 
 la viewport viene estesa per includere anche le zone esterne alla viewport, alle zone viene applicata un etichetta codificata per mezzo di un valore binario
 
@@ -30,8 +30,7 @@ $$
 
 In caso di linee che intersecano più piani si sfrutta la forma parametrica per spezzarle in più segmenti, questo comporta un costo computazionale aggiuntivo
 
-#### ESTENSIONE AL 3D (*RISPETTO A UN PARALLELEPIPEDO*)
-
+#### Estensione al 3d (*rispetto a un parallelepipedo*)
 
 Data una linea come segue
 
@@ -55,8 +54,7 @@ $$
 
 si procede cosi per tutti e $3$ gli assi
 
-
-## CLIPPING DI POLIGONI
+## Clipping di poligoni
 
 Il clipping dei singoli poligoni e più complicato che nel caso delle [singole linee](CLIPPING.md) in quanto **non e detto che dal clipping di un poligono risulti un solo poligono o un poligono con lo stesso numero di vertici**
 
@@ -65,11 +63,9 @@ Il clipping dei singoli poligoni e più complicato che nel caso delle [singole l
 ![](Pasted%20image%2020241217162717.png)
 >[!ERROR] in questo caso ci sono 2 poligoni risultanti :(
 
-### STUTHERLAND-HODGMAN CLIPPING
+## Stutherland-Hodgman clipping
 
 L'idea di base e quella di considerare i lati della viewport singolarmente nella fase di clipping
-
-L'algoritmo prende in input 
 
 ```mermaid
 sequenceDiagram

@@ -1,6 +1,8 @@
-# COMPUTER GRAPHICS
+# Computer graphics
 
-## LA MATEMATICA DIETRO AL RENDERING GRAFICO
+Appunti personali sul corso di fondamenti di computer graphics del professor Casciola Giulio
+
+## La matematica dietro al rendering grafico
 
 - [trasformazioni geometriche](pages/TRASFORMAZIONI_GEOMETRICHE.md)
 - [dal 3D allo schermo: le trasformazioni di vista](pages/TRASFORMAZIONI_VISTA.md)
@@ -12,7 +14,7 @@
 - [gestire le ombre: shadowing](SHADOWING.md)
 - [modellare oggetti 3-dimensionali: Mesh 3D](MESH_3D_POLIGONALI.md)
 
-## TECNOLOGIE PER IL RENDERING
+## Tecnologie per il rendering
 
 - [il protocollo grafico unix: xwindow](pages/XWINDOW_SYSTEM.md)
 - [implementazione con tecnologie web: WebGL](pages/WEBGL.md)

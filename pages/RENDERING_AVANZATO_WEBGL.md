@@ -5,7 +5,7 @@ aliases:
 index: 13
 ---
 
-# RENDERING AVANZATO WEBGL
+# Rendering avanzato con webgl
 
 La pipeline grafica di [WebGL](WEBGL.md) consente di applicare tecniche avanzate di rendering modificandone i componenti
 
@@ -23,7 +23,7 @@ A --> D --> F --> E --> G
 B --> C --> D & E
 ```
 
-## PER FRAGMENT OPERATIONS
+## Per fragment operations
 
 Fase della pipeline che consente di eseguire operazioni custom sui fragment per mezzo di **buffer** un esempio e il [test di profondità](REAL_TIME_RENDERING.md#ALGORITMO%20Z-BUFFER) 
 
@@ -40,7 +40,7 @@ D[color buffer]
 A --> B --> C --> D
 ```
 
-### SCISSOR TEST
+### Scissor test
 
 Permette di restringere il campo visibile a una regione della viewport
 
@@ -49,7 +49,7 @@ gl.scissor(x, y, width, height);
 gl.enable(gl.SCISSOR_TEST);
 ```
 
-### DEPTH TEST
+### Depth test
 
 Implementa l'algoritmo [algoritmo z-buffer](REAL_TIME_RENDERING.md#ALGORITMO%20Z-BUFFER)
 
@@ -71,7 +71,7 @@ gL.GREATER
 gl.ALWAYS
 ```
 
-### ALPHA TEST
+### Alpha test
 
 Simula l'effetto di elementi traslucidi come vetro o acqua per mezzo di una quarta componente colore
 
@@ -79,7 +79,7 @@ Simula l'effetto di elementi traslucidi come vetro o acqua per mezzo di una quar
 gl.enable(gl.BLEND) //necessario per abiitare l'alpha test
 ```
 
-### STENCIL TEST
+### Stencil test
 
 Permette di controllare l'area di disegno sfruttando maschere
 

@@ -5,7 +5,7 @@ aliases:
 index: 11
 ---
 
-# XWINDOW SYSTEM
+# Xwindow system
 
 Le applicazioni grafiche interagiscono con il display per mezzo di uno stack software che risolve la complessità di amministrare i frame buffer per il display
 
@@ -13,7 +13,7 @@ Le applicazioni grafiche interagiscono con il display per mezzo di uno stack sof
 
 Uno di questi strati intermedi e il sistema xwindow, architettura client server per il rendering video via rete, che fornisce una implementazione standard delle api opengl
 
-## XWINDOW ARCHITECTURE
+## Xwindow architecture
 
 ```mermaid
 flowchart LR
@@ -26,7 +26,7 @@ A & B --communicates to server trough x protocol --> C
 Dove i client accedono alle risorse esposte dal server via rete che si occupa di implementare la pipeline di renderizzazione.
 Il sistema e' pensato per interazioni via rete, (*architetture con client poco prestanti e server potenti*) 
 
-## X PROTOCOL
+## X protocol
 
 Il protocollo x prevede 3 tipi di messaggi:
 

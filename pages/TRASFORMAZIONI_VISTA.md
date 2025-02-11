@@ -103,7 +103,7 @@ La proiezione a 3 punti di fuga si ha quando l'osservatore non e allineato con n
 
 In questo tipo di proiezione si ha che:
 
-- $y_w=\frac{d\times X_e}{Z_e}$
+- $y_w=\frac{d\times Y_e}{Z_e}$
 - $x_w=\frac{d\times X_e}{Z_e}$
 
 ### DETERMINARE LE DIMENSIONI DELLA WINDOW
@@ -115,6 +115,8 @@ Le dimensioni della window sono determinate dalla ampiezza del cono di visione c
 Inoltre il piano di vista dell'osservatore viene limitato per mezzo di un front-plane e un back-plane
 
 ![](Pasted%20image%2020241210151712.png)
+
+>[!TIP] ne consegue che per definire una matrice di proiezione sul piano di visione e necessario conoscere il formato della finestra,la posizione della camera l'angolo di visione e i piani di troncatura della camera
 
 ## STRUTTURA FINALE DELLA PIPELINE DI RENDERING
 

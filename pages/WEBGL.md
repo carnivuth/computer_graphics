@@ -16,8 +16,6 @@ Le API WebGL si dividono in due componenti
 - componenti CPU bound per l'elaborazione delle interazioni con il browser e la manipolazione di oggetti
 - componenti GPU bound per l'elaborazione accelerata della grafica 3D
 
-
-
 ```mermaid
 flowchart LR
 A[CPU based controls]
@@ -25,9 +23,9 @@ B[GPU based graphics pipeline]
 A -- prepare compile and executes -->B
 ```
 
-## PROGRAMMI PER GPU: SHADER
+## Programmi per gpu: shader
 
-L'elaborazione accelerata viene realizzata per mezzo di programmi, detti **shader** definiti nel linguaggio OpenGL ES SL (*shader language*), questi si caratterizzano in due tipologie in base ai dati in acquisiti in input
+L'elaborazione accelerata viene realizzata per mezzo di programmi, detti **shader** definiti nel linguaggio [GLSL](https://it.wikipedia.org/wiki/GLSL) (*graphic library shader language*), questi si caratterizzano in due tipologie in base ai dati in acquisiti in input
 
 | VERTEX SHADER                        | FRAGMENT SHADER                                |
 | ------------------------------------ | ---------------------------------------------- |
@@ -48,7 +46,7 @@ sampler2D //puntatore ad un 2D texture
 samplerCube //puntatore ad un cube mapped texture
 ```
 
-### COMPILARE UNO SHADER
+### Compilare uno shader
 
 Una volta scritto il programma shader e necessario compilarlo per mezzo del API CPU bound
 
@@ -81,7 +79,7 @@ gl.linkProgram(shaderProgram);
 gl.useProgram(shaderProgram);
 ```
 
-### ASSOCIARE UN VERTEX BUFFER OBJECT A UN SHADER PROGRAM
+### Associare un vertex buffer object a un shader program
 
 Le coordinate dei vertici vengono riferite da uno shader program dai suoi attributi, questi vanno associati a un Vertex Buffer Object definito nello scope javascript
 
@@ -106,7 +104,7 @@ var coord = gl.getAttribLocation(shader_Program,"coordinates");
 gl.vertexAttribPointer(coord, 3, gl.FLOAT, false, 0, 0);
 ```
 
-## RENDERING 3D
+## Rendering 3d
 
 Per poter renderizzare un oggetto 3D e necessario implementare la [pipeline di vista](TRASFORMAZIONI_VISTA.md) con scaling e [proiezione prospettica](PROIEZIONE_PROSPETTICA.md), che si traduce nel definire le matrici $VM$ $S$ e applicare la [trasformazione magica](PROIEZIONE_PROSPETTICA.md#TRASFORMAZIONE%20MAGICA)
 
@@ -148,7 +146,7 @@ view_matrix[14]=view_matrix[14]-5;//zoom
 
 >[!NOTE] l'asse $z$ nello spazio di proiezione di webGL e invertito
 
-## IMPLEMENTAZIONE DELL' [ILLUMINAZIONE](ILLUMINAZIONE.md)
+## Implementazione dell' [illuminazione](ILLUMINAZIONE.md)
 
 L'illuminazione deve essere implementata con opportuni shader/vertex program (*l'esempio che segue implementa il [gouraud shading](ILLUMINAZIONE.md#GOURAUD%20SHADING)*):
 

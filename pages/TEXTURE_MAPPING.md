@@ -5,7 +5,7 @@ aliases:
 index: 8
 ---
 
-# TEXTURE MAPPING
+# Texture mapping
 
 E il processo che consente di applicare immagini bidimensionali sulla superficie dei poligoni in modo da fornire modelli più realistici, viene realizzata definendo una trasformazione tra lo spazio texture e lo spazio 3D dei poligoni chiamata **parametrizzazione**
 
@@ -18,7 +18,7 @@ A -- parametrizzazione \n superfice/mesh -->B
 B -- proiezione -->C
 ```
 
-## TEXTURE MAPPING 2D
+## Texture mapping 2d
 
 in questo processo si associa ad ogni poligono un area di una texture 2D secondo una funzione di mapping, un esempio di funzione di mapping e il seguente
 
@@ -31,11 +31,11 @@ $$
 
 ![](Pasted%20image%2020250102151554.png)
 
-### IMPLEMENTAZIONE IN CONTESTO [Z-BUFFER](REAL_TIME_RENDERING.md#ALGORITMO%20Z-BUFFER)
+### Implementazione in contesto [z-buffer](REAL_TIME_RENDERING.md#ALGORITMO%20Z-BUFFER)
 
 L'algoritmo [z-buffer](REAL_TIME_RENDERING.md#ALGORITMO%20Z-BUFFER) implica una computazione pixel per pixel, per implementare il texture mapping in questo contesto si applica la trasformazione inversa per ottenere un immagine del pixel (*detto **texel***), nello spazio texture
 
-## GESTIRE L'ALIASING
+## Gestire l'aliasing
 
 il processo di texture mapping necessita di trattamenti appositi per gestire l'aliasing in quanto un **dato punto del modello raramente si mappa in un pixel della texture con precisione**
 
@@ -50,7 +50,7 @@ le tecniche più comuni per la gestione dell'aliasing sono:
 - nearest neighbor
 - bilinear interpolation
 
-## MIP MAPPING
+## Mip mapping
 
 Una tecnica per risolvere il problema di aliasing in fase di texture mapping e quello di sfruttare multiple versioni di una data texture a differenti frazioni della risoluzione
 
@@ -62,14 +62,14 @@ In fase di applicazione della texture si trova il livello a cui il rapporto tra 
 
 ![](Pasted%20image%2020250102153322.png)
 
-## TEXTURE MAPPING CON TWO PART MAPPING 
+## Texture mapping con two part mapping 
 
 Questo procedimento si basa su portare l'immagine in uno spazio 3D intermedio prima di attuare il mapping sul modello
 
 Per esempio oortando la texture su un cilindro:
 ![](Pasted%20image%2020250102154853.png)
 
-## SOLID TEXTURING
+## Solid texturing
 
 Pratica che coinvolge una texture 3D dove il modello viene immerso e il colore di ogni pixel viene definito dalle sue coordinate nello spazio texture
 
@@ -77,7 +77,7 @@ Pratica che coinvolge una texture 3D dove il modello viene immerso e il colore d
 
 Questa pratica consente di simulare meglio  i materiali, tuttavia e molto esosa in termini di spazio in memoria e l'overhead computazionale non ne consente l'utilizzo in applicazioni realtime
 
-### TEXTURE PROCEDURALI
+### Texture procedurali
 
 Il [solid texturing](#SOLID%20TEXTURING) trova il suo miglior impiego nella generazione di texture procedurali   
 

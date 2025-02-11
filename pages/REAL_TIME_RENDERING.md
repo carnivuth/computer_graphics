@@ -9,7 +9,7 @@ index: 3
 
 Uno dei problemi più interessanti in computer graphics e quello del rendering real time, con il quale si intende il **processo di resa di un immagine a partire da una descrizione geometrica della scena tridimensionale in questione**.
 
-## RIMUOVERE LE LINEE NASCOSTE
+## Rimuovere le linee nascoste
 
 Uno dei sotto problemi e quello della determinazione della visibilità o no di una determinata linea e/o faccia. Per questo sono stati presentati diversi che **sfruttano tutti il principio di ordinamento**
 
@@ -20,7 +20,7 @@ Gli algoritmi in questione sono stati classificati in base allo spazio operativo
 | ------------------------------------------------- | ------------------------------------------------------------- |
 | La computazione viene effettuata sugli oggetti 3D | La computazione viene effettuata sull'immagine bidimensionale |
 
-### BACK FACE CULLING
+## Back face culling
 
 Si applica a oggetti 3D convessi e consiste nella computazione della normale di un lato dell'oggetto, se questa e positiva allora la faccia non va disegnata
 
@@ -31,23 +31,23 @@ Si applica a oggetti 3D convessi e consiste nella computazione della normale di 
 | Aumenta la velocità di rendering rimuovendo circa la metà delle facce, che quindi non verranno processate | Funziona solo per superfici chiuse, convesse e senza buchi      |
 | Non serve l’ordinamento delle facce                                                                       | Non può essere considerato un vero algoritmo di Hidden Surfaces |
 
-### ALGORITMO DEL PITTORE
+## Algoritmo del pittore
+
 si ordinano i triangoli dal più lontano al più vicino secondo la distanza $Z$ dall'osservatore e si rasterizzano in quest'ordine
 
 ![](Pasted%20image%2020241210171934.png)
-
 
 | VANTAGGI                                                   | SVANTAGGI                                        |
 | ---------------------------------------------------------- | ------------------------------------------------ |
 | Si basa su un semplice agoritmo di ordinamento di poligoni | E’ difficile definire un criterio di ordinamento |
 |                                                            | Ridisegna i pixel tante volte                    |
 |                                                            | l'ordinamento puo essere costoso                 |
-### VISIBILITY BUFFER
+
+## Visibility buffer
 
 Si basa sul concetto di zona di visibilità, dopo aver riordinato i poligoni questi vengono disegnati e si tiene traccia della zona già ricoperta da altri poligoni
 
 ![](Pasted%20image%2020241210172244.png)
-
 
 | VANTAGGI                                                    | SVANTAGGI                                                      |
 | ----------------------------------------------------------- | -------------------------------------------------------------- |
@@ -55,9 +55,9 @@ Si basa sul concetto di zona di visibilità, dopo aver riordinato i poligoni que
 | Ogni pixel viene disegnato una sola volta                   | l'ordinamento può essere costoso                               |
 |                                                             | maggiore uso della memoria per via della regione di visibilità |
 
-### ALGORITMO Z-BUFFER
+## Algoritmo z-buffer
 
-E' l'algoritmo implementato dalle gpu moderne, lavora in image space e si basa su un estensione del frame buffer chiamata z-buffer
+E' l'algoritmo implementato dalle GPU moderne, lavora in image space e si basa su un estensione del frame buffer chiamata z-buffer
 
 A seguito della [trasformazione di vista](TRASFORMAZIONI_VISTA.md) si rasterizza la faccia e per ogni pixel viene presa in considerazione la distanza Z, se questa e minore di quanto presente nello z buffer si disegna il pixel e si aggiorna lo z-buffer di conseguenza
 
@@ -76,7 +76,7 @@ end
 end
 ```
 
-che in pseudocodice si traduce come segue
+che in pseudo-codice si traduce come segue
 
 ```c
 void zbuffer() {

@@ -1,11 +1,11 @@
 ---
 id: ILLUMINAZIONE
-tags: []
+tags: ["modello di phong","componente ambientale","componente diffusa","componente speculare"]
 aliases: 
 index: 7
 ---
 
-# ILLUMINAZIONE
+# Illuminazione
 
 la fase di [rasterizzazione](ALGORITMI_RASTERIZZAZIONE.md) non e sufficiente per determinare il colore di un oggetto dato che esso nel mondo reale e determinato dalla quantità e dalle componenti di luce che l'oggetto stesso riflette e che viene catturata da'occhio umano
 
@@ -18,7 +18,7 @@ I modelli di illuminazione usati in computer graphics sono approssimazioni della
 | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | modelli che tengono conto della **luce emessa dalle fonti e dalle proprieta del materiale** | modelli che tengono conto anche della luce riflessa dalle **altre superfici presenti nella scena** |
 
-## MODELLO DI ILLUMINAZIONE DI PHONG
+## Modello di illuminazione di phong
 
 E' un modello di illuminazione locale definito come segue:
 
@@ -28,7 +28,7 @@ $$
 
 la componente riflessiva puo essere **diffusa** o **speculare**
 
-### COMPONENTE D'AMBIENTE
+### Componente d'ambiente
 
 Componente dovuta alle caratteristiche specifiche del materiale di un oggetto
 
@@ -36,7 +36,7 @@ $$
 I_{da} = k_aI_a
 $$
 
-### COMPONENTE DI RIFLESSIONE DIFFUSA
+### Componente di riflessione diffusa
 
 Tipica dei materiali opachi, caratterizzata dal fatto che la luce che colpisce un punto si **riflette in tutte le direzioni allo stesso modo**
 
@@ -50,7 +50,7 @@ $$
 
 >[!NOTE] si ricorda che $L$ e $N$ sono vettori normali
 
-### COMPONENTE DI RIFLESSIONE SPECULARE
+### Componente di riflessione speculare
 
 Questa componente approssima il comportamento di riflessione della luce dei materiali lucidi che **non e omogenea in tutte le direzioni**
 
@@ -64,11 +64,11 @@ $$
 
 dove gli scalari $n,k_s$ sono dipendenti dal materiale dell'oggetto
 
-## COMPUTAZIONE DELLA LUCE
+## Computazione della luce
 
-Nella pipeline di rendering e necessario includere un algoritmo in grado di computare il colore di un triangolo illuminato, questo viene fatto per mezzo degli **algoritmi di shaiding**
+Nella pipeline di rendering e necessario includere un algoritmo in grado di computare il colore di un triangolo illuminato, questo viene fatto per mezzo degli **algoritmi di shading**
 
-### FLAT SHADING
+### Flat shading
 
 dato un poligono, si computa la normale per ogni faccia e si applica il modello di illuminazione al centro della faccia 
 
@@ -76,7 +76,7 @@ dato un poligono, si computa la normale per ogni faccia e si applica il modello 
 
 Questa risulta essere una delle soluzioni più semplici, ma il risultato ottenuto e abbastanza mediocre, inoltre il risultato soffre dell'effetto di band match
 
-### GOURAUD SHADING
+### Gouraud shading
 
 Algoritmo che sfrutta il concetto di interpolazione dei vertici,
 
@@ -93,9 +93,9 @@ B -- per ogni poligiono --> A
 
 qui un esempio di  [implementazione in webGL](WEBGL.md#IMPLEMENTAZIONE%20DELL'%20[ILLUMINAZIONE](ILLUMINAZIONE.md))
 
-### PHONG SHADING
+### Phong shading
 
-Variante del [gouraud shading](#GOURAUD%20SHADING) che effettua l'interpolazione delle normali dei vertici prima di applicare il modello di illuminazione
+Variante del [gouraud shading](#Gouraud%20shading) che effettua l'interpolazione delle normali dei vertici prima di applicare il modello di illuminazione
 
 ```mermaid
 flowchart TD

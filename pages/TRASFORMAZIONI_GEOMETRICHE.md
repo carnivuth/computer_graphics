@@ -2,29 +2,29 @@
 index: 1
 ---
 
-# TRASFORMAZIONI GEOMETRICHE
+# Trasformazioni geometriche
 
 Le trasformazioni geometriche sono operazioni che prendono in input un oggetto e ne modificano **posizione orientazione e dimensione** (*ovvero la geometria dello stesso*)
 
 >[!NOTE] Ma cos'e' un oggetto 3D?
 
-## OGGETTO 3D
+## Oggetto 3D
 
 Un oggetto 3D e un elemento di uno spazio cartesiano tridimensionale con sistema di riferimento destrorso **descritto dalle coordinate dei suoi vertici**
 
-## TRASFORMAZIONI BIDIMENSIONALI
+## Trasformazioni bidimensionali
 
 Di seguito le trasformazioni bidimensionali di base
 
-| **TRASFORMAZIONE** | DESCRIZIONE                                                                                                              | OPERAZIONE MATRICIALE                                                                                                                                                                              |
+| **TRASFORMAZIONE** | DESCRIZIONE                                                                                                              | OPERAZIONE MATRICIALE IN AMBIENTE 2D                                                                                                                                                               |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **TRASLAZIONE**    | modifica le coordinate dei vertici per far si che l'oggetto si trovi in una posizione diversa nel sistema di riferimento | $\begin{bmatrix} p_x^{'} \\ p_y^{'} \\ \end{bmatrix} =  \begin{bmatrix} p_x \\ p_y \\ \end{bmatrix} + \begin{bmatrix} d_x \\ d_y \\ \end{bmatrix}$                                                 |
 | **SCALA**          | varia le dimensioni dell'oggetto                                                                                         | $\begin{bmatrix} p_x^{'} \\ p_y^{'} \\ \end{bmatrix} =  \begin{bmatrix} s_x & 0\\ 0&s_y \\ \end{bmatrix} \bullet \begin{bmatrix} p_x \\ p_y \\ \end{bmatrix}$                                      |
 | **ROTAZIONE**      | Rotazione rispetto all'origine degli assi                                                                                | $\begin{bmatrix} p_x^{'} \\ p_y^{'} \\ \end{bmatrix} =  \begin{bmatrix} cos(\theta) & -sin(\theta)\\ sin(\theta)&cos(\theta) \\ \end{bmatrix} \bullet \begin{bmatrix} p_x \\ p_y \\ \end{bmatrix}$ |
 
-## TRASFORMAZIONE LINEARE
+## Trasformazione lineare
 
-Dall'algebra, una trasformazione lineare in uno spazio vettoriale a 3 dimensioni puo essere descritta come segue
+Dall'algebra, una trasformazione lineare in uno spazio vettoriale a 3 dimensioni può essere descritta come segue
 
 $$
 \begin{bmatrix}
@@ -43,9 +43,10 @@ u_y \\
 u_z \\
 \end{bmatrix}
 $$
-## TRASFORMAZIONE AFFINE
 
-Una trasformazione affine e una [TRASFORMAZIONE LINEARE](#TRASFORMAZIONE%20LINEARE) seguita da una traslazione
+## Trasformazione affine
+
+Una trasformazione affine e una [trasformazione lineare](#trasformazione%20lineare) seguita da una traslazione
 
 $$
 \begin{bmatrix}
@@ -69,7 +70,8 @@ u_z \\
 \delta_z \\
 \end{bmatrix}
 $$
-## SPAZIO AFFINE
+
+## Spazio affine
 
 Per permettere la rappresentazione in uno spazio vettoriale dei punti si introduce lo spazio affine, con le seguenti operazioni aggiuntive:
 
@@ -79,7 +81,7 @@ Per permettere la rappresentazione in uno spazio vettoriale dei punti si introdu
 
 > [!ERROR] l'operazione punto + punto non e' definita
 
-### COMBINAZIONE AFFINE
+# Combinazione affine
 
 combinazione lineare che prende in input dei punti e restituisce in output dei punti in cui **i coefficienti hanno somma $1$**
 
@@ -90,26 +92,16 @@ $$
 a_1 + a_2 +a_3 + \space ... \space a_n = 1
 $$
 
-nel caso in cui $a_i \in [0-1) \forall \space i$ allora si parla di **combinazione convessa**
+>[!NOTE] nel caso in cui $a_i \in [0-1) \forall \space i$ allora si parla di **combinazione convessa**
 
-### SISTEMA DI RIFERIMENTO IN UNO SPAZIO AFFINE (FRAME)
+### Sistema di riferimento in uno spazio affine (frame)
 
 per rappresentare in maniera non ambigua punti e vettori si definisce un sistema di riferimento (*coordinate omogenee*) dove viene eletta una quadrupla $<v1,v2,v3,\Theta>$ dove:
 
 - $<v1,v2,v3>$ sono una **base vettoriale dello spazio**
 - $\Theta$ e il **punto di origine**
 
-di conseguenza un vettore e rappresentato come segue
-
-$$
-v = a_1v_1 +a_2v_2 +a_3v_3 
-$$
-
-e un punto e rappresentato come
-
-$$
-p = a_1v_1 +a_2v_2 +a_3v_3 + O
-$$
+si ha di conseguenza che i vettori sono rappresentati dalla tripletta delle coordinate $v = a_1v_1 +a_2v_2 +a_3v_3$, mentre un punto e rappresentato considerando anche il punto di origine $p = a_1v_1 +a_2v_2 +a_3v_3 + O$
 
 Si ottiene di conseguenza uno spazio dove punti e vettori sono caratterizzati da quadruple (*dove il 4 elemento ammette solo valori $0/1$*), e possono essere rappresentati dal prodotto tra la quadrupla di origine e il vettore delle coordinate
 
@@ -131,7 +123,7 @@ $$
 
 >[!NOTE] in questa rappresentazione i vettori non mostrano nella 4 riga il valore $0$ in modo da annullare il punto originario
 
-## TRASFORMAZIONI AFFINI IN SPAZI AFFINI
+## Trasformazioni affini in spazi affini
 
 Per mezzo della rappresentazione in coordinate omogenee le trasformazioni affini diventano tutte trasformazioni lineari
 

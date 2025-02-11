@@ -1,25 +1,23 @@
 ---
 id: ALGORITMI_RASTERIZZAZIONE
 aliases:
-  - ALGORITMI_RASTERIZZAZIONE
-tags: []
+tags: ["texture mapping","algoritmo di linea incrementale"]
 index: 4
 ---
 
-# ALGORITMI DI RASTERIZZAZIONE
+# Algoritmi di rasterizzazione
 
-La rasterizzazione e un processo che dato un poligono in coordinate schermo colora i pixel di quel dato poligono con un colore, esistono due processi principali:
+La rasterizzazione e un processo che dato un **poligono in coordinate schermo colora i pixel di quel dato poligono con un colore**, esistono due processi principali:
 
 - rasterizzazione per mezzo di coordinate baricentriche
 - rasterizzazione per mezzo di scan conversion
 
-Inoltre queste vengono differenziate in base a come il colore del pixel viene determinato
+Inoltre queste vengono differenziate in base a **come il colore del pixel viene determinato**
 
 - colore omogeneo
 - texture (*immagine bidimensionale da applicare sull'oggetto*)
 
-
-## SISTEMA DI RIFERIMENTO BARICENTRICO
+## Sistema di riferimento baricentrico
 
 Dato un poligono in coordinate schermo definito come segue
 
@@ -52,24 +50,28 @@ if(a >=0 && b >=0 && c >= 0){
 
 Inoltre questo approccio può essere implementato in parallelo per mezzo di architetture [SIMD](https://it.wikipedia.org/wiki/SIMD) 
 
-### RECUPERO DELL'INFORMAZIONE COLORE
+### Recupero dell'informazione colore
 
 Inoltre le coordinate baricentriche possono essere utilizzate per recuperare anche l'informazione del colore di un dato punto, date le coordinate baricentriche $\alpha,\beta,\gamma$ l'informazione colore può essere recuperata dallo spazio RGB dei colori
 
 ![](Pasted%20image%2020241214104134.png)
 
-## SCAN CONVERSION
+## Scan conversion
 
-L'idea base di questo algoritmo consiste nell'identificare le sequenze orizzontali di pixel che fanno parte del triangolo
+L'idea base di questo algoritmo consiste nell'identificare le sequenze orizzontali di pixel che fanno parte del triangolo, l'algoritmo si divide in due fasi
 
+- identificazione delle intersezioni della linea con i lati del triangolo
+- colorazione dei pixel fra le due intersezioni
 
-## TEXTURE MAPPING
+Per identificare il prossimo pixel sulla linea si utilizza l'algoritmo di [linea incrementale](https://it.wikipedia.org/wiki/Algoritmo_della_linea_di_Bresenham)
 
-Il processo di texture mapping si occupa di applicare a un dato poligono un immagine sulla sua superfice, sfruttando un mapping tra i vertici di un poligono 3D e un immagine
+## [Texture](TEXTURE_MAPPING.md) mapping
+
+Il processo di texture mapping si occupa di applicare a un dato poligono un immagine sulla sua superficie, sfruttando un mapping tra i vertici di un poligono 3D e un immagine
 
 ![](Pasted%20image%2020241214154455.png)
 
-Di conseguenza il problema si riduce ad **assegnare a ogni pixel il corretto punto della texture in questione**, questo può essere fatto per mezzo delle [coordinate baricentriche](#SISTEMA%20DI%20RIFERIMENTO%20BARICENTRICO) 
+Di conseguenza il problema si riduce ad **assegnare a ogni pixel il corretto punto della texture in questione**, questo può essere fatto per mezzo delle [coordinate baricentriche](#Sistema%20di%20riferimento%20baricentrico), costruendo un mapping fra le coordinate del poligono e le coordinate in spazio texture
 
 Tuttavia non e detta che dato un punto del poligono **ci sia una corrispondenza con un pixel esatta della texture**
 
@@ -77,15 +79,11 @@ Tuttavia non e detta che dato un punto del poligono **ci sia una corrispondenza 
 
 E necessario quindi determinare il colore da assegnare a un dato punto del triangolo,ci sono diverse strategie disponibili:
 
-- nearest neighbor
-- linear interpolation
-- bilinear interpolation
-
-### NEAREST NEIGHBOR
+### Nearest neighbor
 
 Il colore di un dato punto e dato dal pixel della texture più vicino alle coordinate del punto $p$
 
-### BILINEAR INTERPOLATION
+### Bilinear interpolation
 
 Vengono considerati i 4 punti più vicini al punto $p$ Le cui componenti colore vengono pesate per determinare il colore del punto $p$
 
@@ -118,9 +116,9 @@ $$
 
 >[!NOTE] nel caso in cui il punto si trovi al centro dei 4 pixel piu vicini l'interpolazione bilineare si riduce a una media dei 4 pixel $f_P = \frac{f_A +f_B +f_C +f_D}{4}$
 
-### BICUBIC INTERPOLATION
+### Bi-cubic interpolation
 
-Metodologia che prende in considerazione i $16$ pixel piu vicini al punto in questione, le cui componenti vengono pesate per mezzo dell'interpolazione colore
+Metodologia che prende in considerazione i $16$ pixel più vicini al punto in questione, le cui componenti vengono pesate per mezzo dell'interpolazione colore
 
 ![](Pasted%20image%2020241214160835.png)
 
