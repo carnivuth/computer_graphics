@@ -92,4 +92,4 @@ La dimensione dell'elemento canvas non e la stessa della dimensione dell'area di
 
 >[!ERROR] Se invece il canvas è più grande della superficie di disegno, il disegno di un punto potrebbe essere reso come più pixel.
 
-[PREVIOUS](mesh_poligonali.md) [NEXT](xwindow_system.md)
+[PREVIOUS](pages/mesh_poligonali.md) [NEXT](pages/xwindow_system.md)

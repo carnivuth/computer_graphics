@@ -61,4 +61,4 @@ Si ottiene il seguente spazio
 
 ![](Pasted%20image%2020241217130133.png)
 
-[PREVIOUS](algoritmi_rasterizzazione.md) [NEXT](clipping.md)
+[PREVIOUS](pages/algoritmi_rasterizzazione.md) [NEXT](pages/clipping.md)

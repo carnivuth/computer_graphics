@@ -214,4 +214,4 @@ void main( ) {.
 }
 ```
 
-[PREVIOUS](xwindow_system.md) [NEXT](rendering_avanzato_webgl.md)
+[PREVIOUS](pages/xwindow_system.md) [NEXT](pages/rendering_avanzato_webgl.md)

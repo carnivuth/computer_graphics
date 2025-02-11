@@ -102,4 +102,4 @@ void zbuffer() {
 | Non prevede alcun ordinamento, infatti il colore di un pixel e' determinato dal punto 3D (di Ze minore) di cui lui e' immagine | Richiede spazio di memoria aggiuntivo        |
 | Semplice da implementare                                                                                                       | ancora una sorta di ridisegno anche se solo in memoria (copia del frame buffer) |
 
-[PREVIOUS](trasformazioni_vista.md) [NEXT](algoritmi_rasterizzazione.md)
+[PREVIOUS](pages/trasformazioni_vista.md) [NEXT](pages/algoritmi_rasterizzazione.md)

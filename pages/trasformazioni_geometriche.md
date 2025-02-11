@@ -170,4 +170,4 @@ $$
 
 I vantaggi di poter utilizzare trasformazioni lineari sono molteplici, si può ottimizzare la computazione sfruttando le proprietà di linearità, inoltre le trasformazioni possono essere combinate in un unica matrice che può essere applicata in più punti
 
- [NEXT](trasformazioni_vista.md)
+ [NEXT](pages/trasformazioni_vista.md)

@@ -106,4 +106,4 @@ D[si applica il modello di illuminazione alla nuova normale]
 A --> B --> C --> D 
 ```
 
-[PREVIOUS](clipping.md) [NEXT](texture_mapping.md)
+[PREVIOUS](pages/clipping.md) [NEXT](pages/texture_mapping.md)

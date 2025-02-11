@@ -124,4 +124,4 @@ Metodologia che prende in considerazione i $16$ pixel più vicini al punto in qu
 
 >[!NOTE] e il compromesso più ragionevole tra calcolo e qualità nonché quello più utilizzato in molti software di grafica
 
-[PREVIOUS](real_time_rendering.md) [NEXT](proiezione_prospettica.md)
+[PREVIOUS](pages/real_time_rendering.md) [NEXT](pages/proiezione_prospettica.md)

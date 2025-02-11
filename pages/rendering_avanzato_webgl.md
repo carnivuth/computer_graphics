@@ -95,4 +95,4 @@ gl.stencilFunc( gl.ALWAYS, 0x1, 0x1 );
 gl.stencilOp( gl.REPLACE, gl.REPLACE, gl.REPLACE );
 ```
 
-[PREVIOUS](webgl.md) [NEXT](threejs.md)
+[PREVIOUS](pages/webgl.md) [NEXT](pages/threejs.md)

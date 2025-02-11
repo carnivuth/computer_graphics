@@ -65,4 +65,5 @@ const camera = new THREE.PerspectiveCamera(
 	1000  // far
 );
 ```
-[PREVIOUS](rendering_avanzato_webgl.md)
+
+[PREVIOUS](pages/rendering_avanzato_webgl.md)

@@ -90,4 +90,4 @@ Successivamente si effettua la [proiezione prospettica](proiezione_prospettica.m
 
 ![](Pasted%20image%2020241217164353.png)
 
-[PREVIOUS](proiezione_prospettica.md) [NEXT](illuminazione.md)
+[PREVIOUS](pages/proiezione_prospettica.md) [NEXT](pages/illuminazione.md)
