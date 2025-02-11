@@ -3,6 +3,6 @@ services:
   computer_graphics:
     image: httpd:2.4
     ports:
-      - "8080:80"
+      - "8081:80"
     volumes:
       - "./www:/usr/local/apache2/htdocs/"
