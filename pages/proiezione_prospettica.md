@@ -7,7 +7,7 @@ index: 5
 
 # Proiezione prospettica
 
-Per poter applicare l'algoritmo [z-buffer](REAL_TIME_RENDERING.md#ALGORITMO%20Z-BUFFER) e necessario conoscere la **profondità di un pixel** all'interno del piano immagine una prima soluzione può essere:
+Per poter applicare l'algoritmo [z-buffer](real_time_rendering.md#ALGORITMO%20Z-BUFFER) e necessario conoscere la **profondità di un pixel** all'interno del piano immagine una prima soluzione può essere:
 
 Dati due punti $p_1,p_2$ di un segmento e le corrispettive proiezioni del piano immagine $p_{s1},p_{s2}$ si assegna come coordinata $z$ a un punto $p_s$ del segmento compreso tra $p_{s1},p_{s2}$ la coordinata $z$ del punto $p$ corrispondente al punto $p_s$
 
@@ -61,4 +61,4 @@ Si ottiene il seguente spazio
 
 ![](Pasted%20image%2020241217130133.png)
 
-[PREVIOUS](pages/ALGORITMI_RASTERIZZAZIONE.md) [NEXT](pages/CLIPPING.md)
+[PREVIOUS](algoritmi_rasterizzazione.md) [NEXT](clipping.md)

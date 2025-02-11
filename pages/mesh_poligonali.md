@@ -101,4 +101,4 @@ In fase di editing la rappresentazione per mezzo di facce e vertici non e ottima
 
 ![](Pasted%20image%2020250102194324.png)
 
-[PREVIOUS](pages/SHADOWING.md) [NEXT](pages/XWINDOW_SYSTEM.md)
+[PREVIOUS](shadowing.md) [NEXT](html5.md)

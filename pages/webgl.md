@@ -2,7 +2,7 @@
 id: WEBGL
 tags: []
 aliases: 
-index: 12
+index: 13
 ---
 
 # WebGL
@@ -106,7 +106,7 @@ gl.vertexAttribPointer(coord, 3, gl.FLOAT, false, 0, 0);
 
 ## Rendering 3d
 
-Per poter renderizzare un oggetto 3D e necessario implementare la [pipeline di vista](TRASFORMAZIONI_VISTA.md) con scaling e [proiezione prospettica](PROIEZIONE_PROSPETTICA.md), che si traduce nel definire le matrici $VM$ $S$ e applicare la [trasformazione magica](PROIEZIONE_PROSPETTICA.md#TRASFORMAZIONE%20MAGICA)
+Per poter renderizzare un oggetto 3D e necessario implementare la [pipeline di vista](trasformazioni_vista.md) con scaling e [proiezione prospettica](proiezione_prospettica.md), che si traduce nel definire le matrici $VM$ $S$ e applicare la [trasformazione magica](proiezione_prospettica.md#TRASFORMAZIONE%20MAGICA)
 
 ```javascript
 // computazione della matrice di proiezione in prospettiva
@@ -146,9 +146,9 @@ view_matrix[14]=view_matrix[14]-5;//zoom
 
 >[!NOTE] l'asse $z$ nello spazio di proiezione di webGL e invertito
 
-## Implementazione dell' [illuminazione](ILLUMINAZIONE.md)
+## Implementazione dell' [illuminazione](illuminazione.md)
 
-L'illuminazione deve essere implementata con opportuni shader/vertex program (*l'esempio che segue implementa il [gouraud shading](ILLUMINAZIONE.md#GOURAUD%20SHADING)*):
+L'illuminazione deve essere implementata con opportuni shader/vertex program (*l'esempio che segue implementa il [gouraud shading](illuminazione.md#GOURAUD%20SHADING)*):
 
 ```glsl
 //vertex-shader
@@ -214,4 +214,4 @@ void main( ) {.
 }
 ```
 
-[PREVIOUS](pages/XWINDOW_SYSTEM.md) [NEXT](pages/RENDERING_AVANZATO_WEBGL.md)
+[PREVIOUS](xwindow_system.md) [NEXT](rendering_avanzato_webgl.md)

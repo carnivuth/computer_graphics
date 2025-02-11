@@ -59,7 +59,7 @@ Si basa sul concetto di zona di visibilità, dopo aver riordinato i poligoni que
 
 E' l'algoritmo implementato dalle GPU moderne, lavora in image space e si basa su un estensione del frame buffer chiamata z-buffer
 
-A seguito della [trasformazione di vista](TRASFORMAZIONI_VISTA.md) si rasterizza la faccia e per ogni pixel viene presa in considerazione la distanza Z, se questa e minore di quanto presente nello z buffer si disegna il pixel e si aggiorna lo z-buffer di conseguenza
+A seguito della [trasformazione di vista](trasformazioni_vista.md) si rasterizza la faccia e per ogni pixel viene presa in considerazione la distanza Z, se questa e minore di quanto presente nello z buffer si disegna il pixel e si aggiorna lo z-buffer di conseguenza
 
 ```mermaid
 sequenceDiagram
@@ -102,4 +102,4 @@ void zbuffer() {
 | Non prevede alcun ordinamento, infatti il colore di un pixel e' determinato dal punto 3D (di Ze minore) di cui lui e' immagine | Richiede spazio di memoria aggiuntivo        |
 | Semplice da implementare                                                                                                       | ancora una sorta di ridisegno anche se solo in memoria (copia del frame buffer) |
 
-[PREVIOUS](pages/TRASFORMAZIONI_VISTA.md) [NEXT](pages/ALGORITMI_RASTERIZZAZIONE.md)
+[PREVIOUS](trasformazioni_vista.md) [NEXT](algoritmi_rasterizzazione.md)

@@ -29,7 +29,7 @@ $$
 O' = p_1,u = p_2 - p_1,v = p_3 - p_1
 $$
 
-in questo sistema di riferimento tutti i punti vengono rappresentati da [combinazioni affini](TRASFORMAZIONI_GEOMETRICHE.md#COMBINAZIONE%20AFFINE) dei 3 vertici del poligono
+in questo sistema di riferimento tutti i punti vengono rappresentati da [combinazioni affini](trasformazioni_geometriche.md#COMBINAZIONE%20AFFINE) dei 3 vertici del poligono
 
 $$
 p = \alpha p_1 +\beta p_2 +\gamma p_3, \space con
@@ -65,7 +65,7 @@ L'idea base di questo algoritmo consiste nell'identificare le sequenze orizzonta
 
 Per identificare il prossimo pixel sulla linea si utilizza l'algoritmo di [linea incrementale](https://it.wikipedia.org/wiki/Algoritmo_della_linea_di_Bresenham)
 
-## [Texture](TEXTURE_MAPPING.md) mapping
+## [Texture](texture_mapping.md) mapping
 
 Il processo di texture mapping si occupa di applicare a un dato poligono un immagine sulla sua superficie, sfruttando un mapping tra i vertici di un poligono 3D e un immagine
 
@@ -124,4 +124,4 @@ Metodologia che prende in considerazione i $16$ pixel più vicini al punto in qu
 
 >[!NOTE] e il compromesso più ragionevole tra calcolo e qualità nonché quello più utilizzato in molti software di grafica
 
-[PREVIOUS](pages/REAL_TIME_RENDERING.md) [NEXT](pages/PROIEZIONE_PROSPETTICA.md)
+[PREVIOUS](real_time_rendering.md) [NEXT](proiezione_prospettica.md)

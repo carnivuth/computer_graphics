@@ -2,12 +2,12 @@
 id: RENDERING_AVANZATO_WEBGL
 tags: []
 aliases: 
-index: 13
+index: 14
 ---
 
 # Rendering avanzato con webgl
 
-La pipeline grafica di [WebGL](WEBGL.md) consente di applicare tecniche avanzate di rendering modificandone i componenti
+La pipeline grafica di [WebGL](webgl.md) consente di applicare tecniche avanzate di rendering modificandone i componenti
 
 ```mermaid
 flowchart LR
@@ -25,7 +25,7 @@ B --> C --> D & E
 
 ## Per fragment operations
 
-Fase della pipeline che consente di eseguire operazioni custom sui fragment per mezzo di **buffer** un esempio e il [test di profondità](REAL_TIME_RENDERING.md#ALGORITMO%20Z-BUFFER) 
+Fase della pipeline che consente di eseguire operazioni custom sui fragment per mezzo di **buffer** un esempio e il [test di profondità](real_time_rendering.md#ALGORITMO%20Z-BUFFER) 
 
 Le operazioni svolte in questa fase prendono il nome di test, ognuna di esse e associata a un buffer di memoria che viene utilizzato per eseguire le operazioni sui fragment
 
@@ -51,7 +51,7 @@ gl.enable(gl.SCISSOR_TEST);
 
 ### Depth test
 
-Implementa l'algoritmo [algoritmo z-buffer](REAL_TIME_RENDERING.md#ALGORITMO%20Z-BUFFER)
+Implementa l'algoritmo [algoritmo z-buffer](real_time_rendering.md#ALGORITMO%20Z-BUFFER)
 
 ```javascript
 gl.enable( gl.DEPTH_TEST );
@@ -94,4 +94,5 @@ gl.stencilFunc( gl.ALWAYS, 0x1, 0x1 );
 // operazione da applicare agli elementi che passano lo stencil test
 gl.stencilOp( gl.REPLACE, gl.REPLACE, gl.REPLACE );
 ```
-[PREVIOUS](pages/WEBGL.md)
+
+[PREVIOUS](webgl.md) [NEXT](threejs.md)

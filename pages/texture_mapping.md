@@ -31,9 +31,9 @@ $$
 
 ![](Pasted%20image%2020250102151554.png)
 
-### Implementazione in contesto [z-buffer](REAL_TIME_RENDERING.md#ALGORITMO%20Z-BUFFER)
+### Implementazione in contesto [z-buffer](real_time_rendering.md#ALGORITMO%20Z-BUFFER)
 
-L'algoritmo [z-buffer](REAL_TIME_RENDERING.md#ALGORITMO%20Z-BUFFER) implica una computazione pixel per pixel, per implementare il texture mapping in questo contesto si applica la trasformazione inversa per ottenere un immagine del pixel (*detto **texel***), nello spazio texture
+L'algoritmo [z-buffer](real_time_rendering.md#ALGORITMO%20Z-BUFFER) implica una computazione pixel per pixel, per implementare il texture mapping in questo contesto si applica la trasformazione inversa per ottenere un immagine del pixel (*detto **texel***), nello spazio texture
 
 ## Gestire l'aliasing
 
@@ -83,4 +83,4 @@ Il [solid texturing](#SOLID%20TEXTURING) trova il suo miglior impiego nella gene
 
 ![](Pasted%20image%2020250102155433.png)
 
-[PREVIOUS](pages/ILLUMINAZIONE.md) [NEXT](pages/SHADOWING.md)
+[PREVIOUS](illuminazione.md) [NEXT](shadowing.md)

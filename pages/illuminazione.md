@@ -7,7 +7,7 @@ index: 7
 
 # Illuminazione
 
-la fase di [rasterizzazione](ALGORITMI_RASTERIZZAZIONE.md) non e sufficiente per determinare il colore di un oggetto dato che esso nel mondo reale e determinato dalla quantità e dalle componenti di luce che l'oggetto stesso riflette e che viene catturata da'occhio umano
+la fase di [rasterizzazione](algoritmi_rasterizzazione.md) non e sufficiente per determinare il colore di un oggetto dato che esso nel mondo reale e determinato dalla quantità e dalle componenti di luce che l'oggetto stesso riflette e che viene catturata da'occhio umano
 
 Il fenomeno fisico in questione viene catturato dalla [rendering equation](https://en.wikipedia.org/wiki/Rendering_equation) oggetto matematico fin troppo complesso per essere risolto analiticamente
 
@@ -91,7 +91,7 @@ B -- per ogni poligiono --> A
 
 >[!NOTE] in questo caso la normale e definita a livello di vertice come somma delle normali delle superfici adiacenti
 
-qui un esempio di  [implementazione in webGL](WEBGL.md#IMPLEMENTAZIONE%20DELL'%20[ILLUMINAZIONE](ILLUMINAZIONE.md))
+qui un esempio di  [implementazione in webGL](webgl.md#IMPLEMENTAZIONE%20DELL'%20[ILLUMINAZIONE](ILLUMINAZIONE.md))
 
 ### Phong shading
 
@@ -106,4 +106,4 @@ D[si applica il modello di illuminazione alla nuova normale]
 A --> B --> C --> D 
 ```
 
-[PREVIOUS](pages/CLIPPING.md) [NEXT](pages/TEXTURE_MAPPING.md)
+[PREVIOUS](clipping.md) [NEXT](texture_mapping.md)
