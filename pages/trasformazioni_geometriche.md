@@ -1,5 +1,8 @@
 ---
 index: 1
+id: trasformazioni_geometriche
+tags: ["trasformazioni geometriche di base","rotazione","traslazione","scala","trasformazione affine","spazio affine"]
+aliases: 
 ---
 
 # Trasformazioni geometriche
@@ -83,7 +86,7 @@ Per permettere la rappresentazione in uno spazio vettoriale dei punti si introdu
 
 # Combinazione affine
 
-combinazione lineare che prende in input dei punti e restituisce in output dei punti in cui **i coefficienti hanno somma $1$**
+[combinazione lineare](#Trasformazione%20lineare) che prende in input dei punti e restituisce in output dei punti in cui **i coefficienti hanno somma $1$**
 
 $$
 p = a_1p_1 +a_2p_2 +a_3p_3 + \space ... \space a_np_n \space con\\
