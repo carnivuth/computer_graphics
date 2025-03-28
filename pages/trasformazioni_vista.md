@@ -1,8 +1,10 @@
 ---
+id: trasformazioni_vista
+tags: ["proiezioni geometriche"]
+aliases: 
 index: 2
 ---
-
-# TRASFORMAZIONI DI VISTA
+# Trasformazioni di vista
 
 Per poter renderizzare un oggetto 3D in uno schermo esprimerlo per mezzo delle sue coordinate non e sufficiente, e necessario poter trasformare le coordinate dell'oggetto in coordinate del piano immagine
 
@@ -45,7 +47,6 @@ $$
 Ye = -\frac{Ze \times Xe}{\Vert Ze \times Xe\Vert} \\
 $$
 
-
 $$
 VM =\begin{bmatrix}
 Xe_{1} &Xe_{2}&Xe_{3}& 0\\
@@ -61,7 +62,7 @@ $$
 VM =\begin{bmatrix}
 -sin(\theta)&cos(\theta)&0& 0\\
 -cos(\phi)cos(\theta)&-cos(\phi)sin(\theta)&sin(\phi)& 0\\
--sin(\phi)cos(\theta)&-sin(\phi)sin(\theta)&-cos(\phi)& 0\\
+-sin(\phi)cos(\theta)&-sin(\phi)sin(\theta)&-cos(\phi)& D\\
 0 &0&0 & 1\\
 \end{bmatrix}
 $$
